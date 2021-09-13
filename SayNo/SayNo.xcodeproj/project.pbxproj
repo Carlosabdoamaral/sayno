@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351B0C0126EEE309002D2D40 /* ModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0026EEE309002D2D40 /* ModalTest.swift */; };
+		351B0C0226EEE309002D2D40 /* ModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0026EEE309002D2D40 /* ModalTest.swift */; };
+		351B0C0326EEE309002D2D40 /* ModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0026EEE309002D2D40 /* ModalTest.swift */; };
+		351B0C0426EEE309002D2D40 /* ModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0026EEE309002D2D40 /* ModalTest.swift */; };
+		351B0C0626EEE3D6002D2D40 /* ModalContentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0526EEE3D6002D2D40 /* ModalContentTest.swift */; };
+		351B0C0726EEE3D6002D2D40 /* ModalContentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0526EEE3D6002D2D40 /* ModalContentTest.swift */; };
+		351B0C0826EEE3D6002D2D40 /* ModalContentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0526EEE3D6002D2D40 /* ModalContentTest.swift */; };
+		351B0C0926EEE3D6002D2D40 /* ModalContentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0526EEE3D6002D2D40 /* ModalContentTest.swift */; };
+		351B0C0B26EEE438002D2D40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0A26EEE438002D2D40 /* MainView.swift */; };
+		351B0C0C26EEE438002D2D40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0A26EEE438002D2D40 /* MainView.swift */; };
+		351B0C0D26EEE438002D2D40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0A26EEE438002D2D40 /* MainView.swift */; };
+		351B0C0E26EEE438002D2D40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B0C0A26EEE438002D2D40 /* MainView.swift */; };
 		35A0F0D926EED06E004F97C8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F0D826EED06E004F97C8 /* Tests_iOS.swift */; };
 		35A0F0E426EED06E004F97C8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F0E326EED06E004F97C8 /* Tests_macOS.swift */; };
 		35A0F0E626EED06E004F97C8 /* SayNoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F0BD26EED065004F97C8 /* SayNoApp.swift */; };
@@ -29,6 +41,7 @@
 		35A0F11126EED2ED004F97C8 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F10F26EED2ED004F97C8 /* ReportView.swift */; };
 		35A0F11226EED2ED004F97C8 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F10F26EED2ED004F97C8 /* ReportView.swift */; };
 		35A0F11326EED2ED004F97C8 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0F10F26EED2ED004F97C8 /* ReportView.swift */; };
+		35A0F11B26EEE24B004F97C8 /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 35A0F11A26EEE24B004F97C8 /* ModalView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351B0C0026EEE309002D2D40 /* ModalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTest.swift; sourceTree = "<group>"; };
+		351B0C0526EEE3D6002D2D40 /* ModalContentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContentTest.swift; sourceTree = "<group>"; };
+		351B0C0A26EEE438002D2D40 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		35A0F0BD26EED065004F97C8 /* SayNoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayNoApp.swift; sourceTree = "<group>"; };
 		35A0F0BF26EED06E004F97C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A0F0C426EED06E004F97C8 /* SayNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A0F11B26EEE24B004F97C8 /* ModalView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351B0BFA26EEE2BF002D2D40 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				351B0C0026EEE309002D2D40 /* ModalTest.swift */,
+				351B0C0526EEE3D6002D2D40 /* ModalContentTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		35A0F0B726EED065004F97C8 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +141,7 @@
 		35A0F0BC26EED065004F97C8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				351B0BFA26EEE2BF002D2D40 /* Tests */,
 				35A0F11826EED329004F97C8 /* Profile */,
 				35A0F11526EED30E004F97C8 /* Assets */,
 				35A0F11426EED303004F97C8 /* Main */,
@@ -183,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				35A0F0FA26EED23B004F97C8 /* MenuView.swift */,
+				351B0C0A26EEE438002D2D40 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -235,6 +263,9 @@
 			dependencies = (
 			);
 			name = "SayNo (iOS)";
+			packageProductDependencies = (
+				35A0F11A26EEE24B004F97C8 /* ModalView */,
+			);
 			productName = "SayNo (iOS)";
 			productReference = 35A0F0C426EED06E004F97C8 /* SayNo.app */;
 			productType = "com.apple.product-type.application";
@@ -326,6 +357,9 @@
 				Base,
 			);
 			mainGroup = 35A0F0B726EED065004F97C8;
+			packageReferences = (
+				35A0F11926EEE24A004F97C8 /* XCRemoteSwiftPackageReference "modal-view" */,
+			);
 			productRefGroup = 35A0F0C526EED06E004F97C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,9 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B0C0626EEE3D6002D2D40 /* ModalContentTest.swift in Sources */,
+				351B0C0B26EEE438002D2D40 /* MainView.swift in Sources */,
 				35A0F10026EED248004F97C8 /* ProfileView.swift in Sources */,
 				35A0F11026EED2ED004F97C8 /* ReportView.swift in Sources */,
 				35A0F10B26EED2DE004F97C8 /* NewReportView.swift in Sources */,
+				351B0C0126EEE309002D2D40 /* ModalTest.swift in Sources */,
 				35A0F0FB26EED23B004F97C8 /* MenuView.swift in Sources */,
 				35A0F0E626EED06E004F97C8 /* SayNoApp.swift in Sources */,
 			);
@@ -388,9 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B0C0726EEE3D6002D2D40 /* ModalContentTest.swift in Sources */,
+				351B0C0C26EEE438002D2D40 /* MainView.swift in Sources */,
 				35A0F10126EED248004F97C8 /* ProfileView.swift in Sources */,
 				35A0F11126EED2ED004F97C8 /* ReportView.swift in Sources */,
 				35A0F10C26EED2DE004F97C8 /* NewReportView.swift in Sources */,
+				351B0C0226EEE309002D2D40 /* ModalTest.swift in Sources */,
 				35A0F0FC26EED23B004F97C8 /* MenuView.swift in Sources */,
 				35A0F0E726EED06E004F97C8 /* SayNoApp.swift in Sources */,
 			);
@@ -400,9 +440,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B0C0826EEE3D6002D2D40 /* ModalContentTest.swift in Sources */,
+				351B0C0D26EEE438002D2D40 /* MainView.swift in Sources */,
 				35A0F0D926EED06E004F97C8 /* Tests_iOS.swift in Sources */,
 				35A0F10226EED248004F97C8 /* ProfileView.swift in Sources */,
 				35A0F0FD26EED23B004F97C8 /* MenuView.swift in Sources */,
+				351B0C0326EEE309002D2D40 /* ModalTest.swift in Sources */,
 				35A0F11226EED2ED004F97C8 /* ReportView.swift in Sources */,
 				35A0F10D26EED2DE004F97C8 /* NewReportView.swift in Sources */,
 			);
@@ -412,9 +455,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B0C0926EEE3D6002D2D40 /* ModalContentTest.swift in Sources */,
+				351B0C0E26EEE438002D2D40 /* MainView.swift in Sources */,
 				35A0F0E426EED06E004F97C8 /* Tests_macOS.swift in Sources */,
 				35A0F10326EED248004F97C8 /* ProfileView.swift in Sources */,
 				35A0F0FE26EED23B004F97C8 /* MenuView.swift in Sources */,
+				351B0C0426EEE309002D2D40 /* ModalTest.swift in Sources */,
 				35A0F11326EED2ED004F97C8 /* ReportView.swift in Sources */,
 				35A0F10E26EED2DE004F97C8 /* NewReportView.swift in Sources */,
 			);
@@ -768,6 +814,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35A0F11926EEE24A004F97C8 /* XCRemoteSwiftPackageReference "modal-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diniska/modal-view";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35A0F11A26EEE24B004F97C8 /* ModalView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35A0F11926EEE24A004F97C8 /* XCRemoteSwiftPackageReference "modal-view" */;
+			productName = ModalView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35A0F0B826EED065004F97C8 /* Project object */;
 }
