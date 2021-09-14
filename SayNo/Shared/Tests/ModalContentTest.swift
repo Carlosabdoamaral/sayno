@@ -1,10 +1,3 @@
-//
-//  ModalContentTest.swift
-//  SayNo
-//
-//  Created by JEFERSON AMARAL on 12/09/21.
-//
-
 import SwiftUI
 
 struct ModalContentTest: View {
