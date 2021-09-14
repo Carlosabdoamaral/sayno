@@ -3,10 +3,10 @@ import ModalView
 
 struct NewReportView: View {
     @State var playNotificationSounds : Bool = false
-    @State var beAnonymous : Bool = true
     @State var username : String = ""
     @State var title : String = ""
     @State var description : String = ""
+    @State var notifications : Bool = false
     
     func post(){
         print("Postou")
@@ -14,43 +14,43 @@ struct NewReportView: View {
 
     var body: some View {
         ModalPresenter{
-            
             Form {
-                Section(header: Text("Sobre voce")) {
-                    Toggle("Postar anonimamente", isOn: $beAnonymous)
-                    
-                    if beAnonymous == false{
-                        TextField("Username", text: $username)
-                    }
-                }
-                
-                Section(header: Text("Desabafe")) {
+                Section(header: Text("Postar relato")) {
                     TextField("Título", text: $title)
                     TextEditor(text: $description)
                         .lineLimit(7)
                 }
                 
-                Section(header: Text("Pré Visualizacao")){
-                    VStack(alignment: .leading){
-                        if beAnonymous == false{
-                            Text("\(username)")
-                                .font(.caption)
+                Section() {
+                    Toggle("Notificacoes", isOn: $notifications)
+                }
+                
+                
+                if title != ""{
+                    Section(header: Text("Pré Visualizacao")){
+                        VStack(alignment: .leading){
+                            Text("\(title)")
+                                .font(.title)
+                            
+                            Text("DD/M")
+                                .font(.footnote)
+                                                    
+                            Text("\(description)")
+                                .font(.subheadline)
+                                .lineLimit(3)
                         }
                         
-                        Text("\(title)")
-                            .font(.title)
-                                                
-                        Text("\(description)")
-                            .font(.subheadline)
-                            .lineLimit(3)
+                        Button(action: post, label: {
+                            Text("Publicar")
+                                .multilineTextAlignment(.center)
+                                .frame(width: 290)
+                        })
                     }
-                    
-                    Button(action: post, label: {
-                        Text("Publicar")
-                            .multilineTextAlignment(.center)
-                            .frame(width: 310)
-                    })
                 }
+                else{
+                    
+                }
+                
             }.navigationBarTitle("Publicar relato")
         }
     }
