@@ -11,3 +11,5 @@ Usuário:
     - Texto
     - Data
 - Reagir (Apoiar, desejar o bem, ...)
+
+https://blog.spanagiot.gr/get-mac-address-for-ios/
