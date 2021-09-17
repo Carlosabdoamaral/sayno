@@ -8,12 +8,15 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
     
     @IBOutlet weak var reportsStack: UIStackView!
     @IBOutlet weak var commentsStack: UIStackView!
     @IBOutlet weak var usersStack: UIStackView!
     @IBOutlet weak var statesStack: UIStackView!
+    
+    @IBOutlet weak var reportStack: UIStackView!
+    @IBOutlet weak var openDetailsReport: UIButton!
+    
     @IBOutlet weak var termsButton: UIButton!
     
     override func viewDidLoad() {
@@ -22,21 +25,26 @@ class HomeViewController: UIViewController {
         title = "Menu"
         
         let cornerRadius: CGFloat = 15
-        // Do any additional setup after loading the view.
+        let cornerRadiusButtonReport : CGFloat = 5
+        
         reportsStack.layer.cornerRadius = cornerRadius
-        reportsStack.layer.cornerCurve = .continuous
+        reportsStack.layer.cornerCurve  = .continuous
         
         commentsStack.layer.cornerRadius = cornerRadius
-        commentsStack.layer.cornerCurve = .continuous
+        commentsStack.layer.cornerCurve  = .continuous
         
         usersStack.layer.cornerRadius = cornerRadius
-        usersStack.layer.cornerCurve = .continuous
+        usersStack.layer.cornerCurve  = .continuous
         
         statesStack.layer.cornerRadius = cornerRadius
-        statesStack.layer.cornerCurve = .continuous
+        statesStack.layer.cornerCurve  = .continuous
         
-        termsButton.layer.cornerRadius = cornerRadius
-        termsButton.layer.cornerCurve = .continuous
+        reportStack.layer.cornerRadius = cornerRadius
+        reportStack.layer.cornerCurve  = .continuous
+        
+        openDetailsReport.layer.cornerRadius = cornerRadiusButtonReport
+        openDetailsReport.layer.cornerCurve  = .continuous
+        
     }
     
 

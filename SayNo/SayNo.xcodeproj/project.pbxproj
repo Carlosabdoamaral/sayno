@@ -16,6 +16,10 @@
 		35B5467426F3E2630098D47F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467326F3E2630098D47F /* HomeViewController.swift */; };
 		35B5467626F3E3B30098D47F /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467526F3E3B30098D47F /* TermsViewController.swift */; };
 		35B5467826F430470098D47F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467726F430470098D47F /* SettingsViewController.swift */; };
+		35B5467A26F4B7170098D47F /* ReportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467926F4B7170098D47F /* ReportDetailsViewController.swift */; };
+		35B5467C26F4B9B70098D47F /* CommentAndReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */; };
+		35B5467E26F4BD210098D47F /* CommentAndReactThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */; };
+		35B5468026F4C8600098D47F /* BlockedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467F26F4C8600098D47F /* BlockedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		35B5467326F3E2630098D47F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35B5467526F3E3B30098D47F /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		35B5467726F430470098D47F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		35B5467926F4B7170098D47F /* ReportDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailsViewController.swift; sourceTree = "<group>"; };
+		35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAndReactViewController.swift; sourceTree = "<group>"; };
+		35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAndReactThanksViewController.swift; sourceTree = "<group>"; };
+		35B5467F26F4C8600098D47F /* BlockedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 				35B5467326F3E2630098D47F /* HomeViewController.swift */,
 				35B5467526F3E3B30098D47F /* TermsViewController.swift */,
 				35B5467726F430470098D47F /* SettingsViewController.swift */,
+				35B5467926F4B7170098D47F /* ReportDetailsViewController.swift */,
+				35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */,
+				35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */,
+				35B5467F26F4C8600098D47F /* BlockedViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -162,10 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B5467E26F4BD210098D47F /* CommentAndReactThanksViewController.swift in Sources */,
 				35B5466226F3E11D0098D47F /* ViewController.swift in Sources */,
+				35B5467A26F4B7170098D47F /* ReportDetailsViewController.swift in Sources */,
+				35B5467C26F4B9B70098D47F /* CommentAndReactViewController.swift in Sources */,
 				35B5465E26F3E11D0098D47F /* AppDelegate.swift in Sources */,
 				35B5466026F3E11D0098D47F /* SceneDelegate.swift in Sources */,
 				35B5467426F3E2630098D47F /* HomeViewController.swift in Sources */,
+				35B5468026F4C8600098D47F /* BlockedViewController.swift in Sources */,
 				35B5467626F3E3B30098D47F /* TermsViewController.swift in Sources */,
 				35B5467826F430470098D47F /* SettingsViewController.swift in Sources */,
 			);
