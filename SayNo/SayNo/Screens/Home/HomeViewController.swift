@@ -29,8 +29,6 @@ class HomeViewController: UIViewController {
         openDetailsReport.layer.cornerRadius = cornerRadiusButtonReport
         openDetailsReport.layer.cornerCurve  = .continuous
         
-        navbarStack.layer.cornerRadius = (cornerRadius - 10)
-        navbarStack.layer.cornerCurve = .continuous
     }
     
 

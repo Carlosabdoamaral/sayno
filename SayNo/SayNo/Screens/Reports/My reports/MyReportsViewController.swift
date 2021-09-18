@@ -12,7 +12,6 @@ class MyReportsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "My Reports"
         // Do any additional setup after loading the view.
     }
     
