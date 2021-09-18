@@ -6,6 +6,8 @@ target 'SayNo' do
   use_frameworks!
 
   # Pods for SayNo
-  pod 'Charts'
+pod 'Charts'
+pod 'Firebase/Core'
+pod 'Firebase/Crashlytics'
 
 end
