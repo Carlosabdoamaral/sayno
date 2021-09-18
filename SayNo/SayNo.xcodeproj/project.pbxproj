@@ -20,6 +20,8 @@
 		35B5467C26F4B9B70098D47F /* CommentAndReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */; };
 		35B5467E26F4BD210098D47F /* CommentAndReactThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */; };
 		35B5468026F4C8600098D47F /* BlockedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467F26F4C8600098D47F /* BlockedViewController.swift */; };
+		35B5468226F53E480098D47F /* MyReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5468126F53E480098D47F /* MyReportsViewController.swift */; };
+		35B5468426F567550098D47F /* DropMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5468326F567550098D47F /* DropMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAndReactViewController.swift; sourceTree = "<group>"; };
 		35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAndReactThanksViewController.swift; sourceTree = "<group>"; };
 		35B5467F26F4C8600098D47F /* BlockedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedViewController.swift; sourceTree = "<group>"; };
+		35B5468126F53E480098D47F /* MyReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReportsViewController.swift; sourceTree = "<group>"; };
+		35B5468326F567550098D47F /* DropMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +90,13 @@
 		35B5467126F3E1C80098D47F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				35B5467326F3E2630098D47F /* HomeViewController.swift */,
-				35B5467526F3E3B30098D47F /* TermsViewController.swift */,
-				35B5467726F430470098D47F /* SettingsViewController.swift */,
-				35B5467926F4B7170098D47F /* ReportDetailsViewController.swift */,
-				35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */,
-				35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */,
-				35B5467F26F4C8600098D47F /* BlockedViewController.swift */,
+				35B5468B26F56FB50098D47F /* My reports */,
+				35B5468A26F56FA20098D47F /* Blocked */,
+				35B5468926F56F8E0098D47F /* Settings */,
+				35B5468826F56F800098D47F /* Reports */,
+				35B5468726F56F750098D47F /* Terms */,
+				35B5468626F56F6E0098D47F /* Home */,
+				35B5468526F56F660098D47F /* Dropdown menu */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -102,6 +106,64 @@
 			children = (
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		35B5468526F56F660098D47F /* Dropdown menu */ = {
+			isa = PBXGroup;
+			children = (
+				35B5468326F567550098D47F /* DropMenuViewController.swift */,
+			);
+			path = "Dropdown menu";
+			sourceTree = "<group>";
+		};
+		35B5468626F56F6E0098D47F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				35B5467326F3E2630098D47F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		35B5468726F56F750098D47F /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				35B5467526F3E3B30098D47F /* TermsViewController.swift */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		35B5468826F56F800098D47F /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				35B5467B26F4B9B70098D47F /* CommentAndReactViewController.swift */,
+				35B5467926F4B7170098D47F /* ReportDetailsViewController.swift */,
+				35B5467D26F4BD210098D47F /* CommentAndReactThanksViewController.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		35B5468926F56F8E0098D47F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				35B5467726F430470098D47F /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		35B5468A26F56FA20098D47F /* Blocked */ = {
+			isa = PBXGroup;
+			children = (
+				35B5467F26F4C8600098D47F /* BlockedViewController.swift */,
+			);
+			path = Blocked;
+			sourceTree = "<group>";
+		};
+		35B5468B26F56FB50098D47F /* My reports */ = {
+			isa = PBXGroup;
+			children = (
+				35B5468126F53E480098D47F /* MyReportsViewController.swift */,
+			);
+			path = "My reports";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,11 +238,13 @@
 			files = (
 				35B5467E26F4BD210098D47F /* CommentAndReactThanksViewController.swift in Sources */,
 				35B5466226F3E11D0098D47F /* ViewController.swift in Sources */,
+				35B5468226F53E480098D47F /* MyReportsViewController.swift in Sources */,
 				35B5467A26F4B7170098D47F /* ReportDetailsViewController.swift in Sources */,
 				35B5467C26F4B9B70098D47F /* CommentAndReactViewController.swift in Sources */,
 				35B5465E26F3E11D0098D47F /* AppDelegate.swift in Sources */,
 				35B5466026F3E11D0098D47F /* SceneDelegate.swift in Sources */,
 				35B5467426F3E2630098D47F /* HomeViewController.swift in Sources */,
+				35B5468426F567550098D47F /* DropMenuViewController.swift in Sources */,
 				35B5468026F4C8600098D47F /* BlockedViewController.swift in Sources */,
 				35B5467626F3E3B30098D47F /* TermsViewController.swift in Sources */,
 				35B5467826F430470098D47F /* SettingsViewController.swift in Sources */,

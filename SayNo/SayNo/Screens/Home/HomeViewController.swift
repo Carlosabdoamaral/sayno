@@ -9,15 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var reportsStack: UIStackView!
-    @IBOutlet weak var commentsStack: UIStackView!
-    @IBOutlet weak var usersStack: UIStackView!
-    @IBOutlet weak var statesStack: UIStackView!
-    
     @IBOutlet weak var reportStack: UIStackView!
     @IBOutlet weak var openDetailsReport: UIButton!
     
     @IBOutlet weak var termsButton: UIButton!
+    @IBOutlet weak var navbarStack: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,24 +23,14 @@ class HomeViewController: UIViewController {
         let cornerRadius: CGFloat = 15
         let cornerRadiusButtonReport : CGFloat = 5
         
-        reportsStack.layer.cornerRadius = cornerRadius
-        reportsStack.layer.cornerCurve  = .continuous
-        
-        commentsStack.layer.cornerRadius = cornerRadius
-        commentsStack.layer.cornerCurve  = .continuous
-        
-        usersStack.layer.cornerRadius = cornerRadius
-        usersStack.layer.cornerCurve  = .continuous
-        
-        statesStack.layer.cornerRadius = cornerRadius
-        statesStack.layer.cornerCurve  = .continuous
-        
         reportStack.layer.cornerRadius = cornerRadius
         reportStack.layer.cornerCurve  = .continuous
         
         openDetailsReport.layer.cornerRadius = cornerRadiusButtonReport
         openDetailsReport.layer.cornerCurve  = .continuous
         
+        navbarStack.layer.cornerRadius = (cornerRadius - 10)
+        navbarStack.layer.cornerCurve = .continuous
     }
     
 

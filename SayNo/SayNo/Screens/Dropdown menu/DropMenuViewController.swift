@@ -1,19 +1,22 @@
 //
-//  TermsViewController.swift
+//  DropMenuViewController.swift
 //  SayNo
 //
-//  Created by JEFERSON AMARAL on 16/09/21.
+//  Created by JEFERSON AMARAL on 17/09/21.
 //
 
 import UIKit
 
-class TermsViewController: UIViewController {
-
-    @IBOutlet weak var bottomButton: UIButton!
+class DropMenuViewController: UIViewController {
+    @IBOutlet weak var reportsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        bottomButton.layer.cornerRadius = 4
+
+        // Do any additional setup after loading the view.
+        
     }
+    
     
 
     /*
