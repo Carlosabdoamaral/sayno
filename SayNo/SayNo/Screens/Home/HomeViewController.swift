@@ -9,26 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var reportStack: UIStackView!
-    @IBOutlet weak var openDetailsReport: UIButton!
-    
-    @IBOutlet weak var termsButton: UIButton!
-    @IBOutlet weak var navbarStack: UIStackView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Menu"
-        
-        let cornerRadius: CGFloat = 15
-        let cornerRadiusButtonReport : CGFloat = 5
-        
-        reportStack.layer.cornerRadius = cornerRadius
-        reportStack.layer.cornerCurve  = .continuous
-        
-        openDetailsReport.layer.cornerRadius = cornerRadiusButtonReport
-        openDetailsReport.layer.cornerCurve  = .continuous
-        
     }
     
 
