@@ -9,5 +9,6 @@ target 'SayNo' do
 pod 'Charts'
 pod 'Firebase/Core'
 pod 'Firebase/Crashlytics'
+pod 'Firebase/Firestore'
 
 end
