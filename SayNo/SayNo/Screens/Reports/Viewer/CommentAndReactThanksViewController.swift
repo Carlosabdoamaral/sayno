@@ -9,9 +9,10 @@ import UIKit
 
 class CommentAndReactThanksViewController: UIViewController {
 
+    @IBOutlet weak var reaction1: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
