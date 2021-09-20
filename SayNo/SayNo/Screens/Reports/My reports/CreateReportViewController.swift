@@ -12,90 +12,86 @@ class CreateReportViewController: UIViewController, UITextFieldDelegate {
 
     let db = Firestore.firestore()
     
-    private let label: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.textColor = UIColor.white
-        return label
+    private let titleField : UITextField = {
+        let titleField = UITextField()
+        titleField.placeholder = "Digite um titulo"
+        titleField.backgroundColor = UIColor.white
+        titleField.layer.borderWidth = 1
+        titleField.layer.borderColor = UIColor.black.cgColor
+        return titleField
     }()
     
-    private let field : UITextField = {
-        let field = UITextField()
-        field.placeholder = "Digite um titulo"
-        field.backgroundColor = UIColor.white
-        field.layer.borderWidth = 1
-        field.layer.borderColor = UIColor.black.cgColor
-        return field
+    private let descriptionField : UITextField = {
+        let descriptionField = UITextField()
+        descriptionField.placeholder = "Digite uma descricao"
+        descriptionField.backgroundColor = UIColor.white
+        descriptionField.layer.borderWidth = 1
+        descriptionField.layer.borderColor = UIColor.black.cgColor
+        return descriptionField
     }()
     
-    private let reportBody : UITextField = {
-        let reportBody = UITextField()
-        reportBody.placeholder = "Digite uma descricao"
-        reportBody.backgroundColor = UIColor.white
-        reportBody.layer.borderWidth = 1
-        reportBody.layer.borderColor = UIColor.black.cgColor
-        return reportBody
+    private let postButton : UIButton = {
+        let postButton = UIButton()
+        postButton.setTitle("Publicar!", for: .normal)
+        postButton.backgroundColor = .systemPink
+        postButton.contentVerticalAlignment = .center
+        postButton.layer.cornerRadius = 5
+        postButton.addTarget(self, action: #selector(postReport), for: .touchUpInside)
+        
+        return postButton
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(label)
-        view.addSubview(field)
-        view.addSubview(reportBody)
+        view.addSubview(titleField)
+        view.addSubview(descriptionField)
+        view.addSubview(postButton)
         
-        field.delegate = self
+        titleField.delegate = self
+        descriptionField.delegate = self
         
         let docRef = db.document("/reports/example")
         docRef.getDocument { [weak self] snapshot, error in
             guard let data = snapshot?.data(), error == nil else {
                 return
             }
-            
-            guard let text = data["title"] as? String else{
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self?.label.text = text
-            }
-            
         }
         
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        field.frame = CGRect(x: 10,
+        titleField.frame = CGRect(x: 10,
                              y: view.safeAreaInsets.top+10,
                              width: view.frame.size.width-20,
                              height: 50)
         
-        reportBody.frame = CGRect(x: 10,
+        descriptionField.frame = CGRect(x: 10,
                              y: view.safeAreaInsets.top+10+60,
                              width: view.frame.size.width-20,
                              height: 200)
         
-        label.frame = CGRect(x: 10,
-                             y: view.safeAreaInsets.top+10+260,
-                             width: view.frame.size.width-20,
-                             height: 100)
+        postButton.frame = CGRect(x: 10,
+                                  y: view.safeAreaInsets.top+370,
+                                  width: view.frame.width-20,
+                                  height: 30)
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if let text = textField.text, !text.isEmpty{
-            saveData(text: text)
+    @objc func postReport() -> Bool{
+        if let title = titleField.text, !title.isEmpty{
+            if let description = descriptionField.text, !description.isEmpty{
+                saveData(title: title, description: description)
+            }
         }
         return true
     }
     
 
-    func saveData(text: String){
+    func saveData(title: String, description: String){
         // /colection/document
         let docRef = db.document("/reports/example")
-        docRef.setData(["title": text, "description": reportBody])
+        docRef.setData(["title": title, "description": description])
     }
 
 }
