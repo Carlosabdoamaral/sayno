@@ -21,7 +21,7 @@ class ReportDetailsViewController: UIViewController {
         
         //Pegar as info do banco
         let db = Firestore.firestore()
-        let docRef = db.document("/reports/example")
+        let docRef = db.document("/report/1")
         docRef.getDocument { [weak self] snapshot, error in
             guard let data = snapshot?.data(), error == nil else {
                 return
