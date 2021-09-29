@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Report Details View Controller-->
+        <!--Título do post-->
         <scene sceneID="TSg-t7-arh">
             <objects>
                 <viewController id="uw0-ly-Ioe" customClass="ReportDetailsViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                             <constraint firstItem="Szt-cZ-I8S" firstAttribute="trailing" secondItem="Ho2-au-458" secondAttribute="trailing" constant="101" id="pd7-ae-fB2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HOA-lb-8Oy"/>
+                    <navigationItem key="navigationItem" title="Título do post" id="HOA-lb-8Oy"/>
                     <connections>
                         <outlet property="commentButton" destination="Ho2-au-458" id="CQp-Jd-Zdl"/>
                     </connections>
@@ -86,18 +86,51 @@
             </objects>
             <point key="canvasLocation" x="-2218" y="-655"/>
         </scene>
-        <!--Create Report View Controller-->
+        <!--Novo Relato-->
         <scene sceneID="HKb-aG-OKe">
             <objects>
                 <viewController id="SlD-rO-Nou" customClass="CreateReportViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vdI-c0-iLt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PB3-vD-Ww4">
+                                <rect key="frame" x="20" y="260.5" width="335" height="146"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-rE-jfh">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Dud-aa-gna"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descricao..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X66-Ao-rQq">
+                                        <rect key="frame" x="0.0" y="48" width="335" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="WLs-1k-01F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-os-Ro1">
+                                        <rect key="frame" x="0.0" y="116" width="335" height="30"/>
+                                        <state key="normal" title="Publicar"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hDd-dP-jWU"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="PB3-vD-Ww4" firstAttribute="centerY" secondItem="vdI-c0-iLt" secondAttribute="centerY" id="8m7-rZ-VOO"/>
+                            <constraint firstItem="hDd-dP-jWU" firstAttribute="trailing" secondItem="PB3-vD-Ww4" secondAttribute="trailing" constant="20" id="ZA7-lj-XDR"/>
+                            <constraint firstItem="PB3-vD-Ww4" firstAttribute="leading" secondItem="hDd-dP-jWU" secondAttribute="leading" constant="20" id="hbf-RU-RGf"/>
+                            <constraint firstItem="PB3-vD-Ww4" firstAttribute="centerX" secondItem="vdI-c0-iLt" secondAttribute="centerX" id="pb8-X9-iCq"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="G6H-bX-EQ2">
+                    <navigationItem key="navigationItem" title="Novo Relato" id="G6H-bX-EQ2">
                         <barButtonItem key="backBarButtonItem" title=" " id="7bw-ui-fna"/>
                     </navigationItem>
                 </viewController>
@@ -406,7 +439,6 @@
         <!-- -->
         <scene sceneID="yQo-b3-AfA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kom-ML-Ja1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="2lM-Gh-AAt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title=" " id="oGX-X5-nZ1">
                         <barButtonItem key="backBarButtonItem" title=" " id="SXD-Od-oS4"/>
@@ -425,6 +457,7 @@
                         <segue destination="v9Z-zP-gAM" kind="relationship" relationship="viewControllers" id="fIk-IC-sDY"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kom-ML-Ja1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2930" y="-2284"/>
         </scene>
