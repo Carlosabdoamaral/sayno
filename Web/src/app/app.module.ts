@@ -1,20 +1,39 @@
+import {MatTabsModule} from '@angular/material/tabs';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MatInputModule} from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { IndexbannerComponent } from './components/banners/indexbanner/indexbanner.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import { DownloadComponent } from './components/download/download.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { LoginComponent } from './views/login/login.component';
+import { IndexComponent } from './views/index/index.component';
+import { ContactbannerComponent } from './components/banners/contactbanner/contactbanner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    IndexbannerComponent,
+    DownloadComponent,
+    ContactComponent,
+    LoginComponent,
+    IndexComponent,
+    ContactbannerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
