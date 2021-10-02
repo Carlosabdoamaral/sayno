@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Menu"
+        title = "Home"
         let macAddress = UIDevice.current.identifierForVendor?.uuidString
         saveMacAddress(mac: macAddress!)
         mainPost.layer.cornerCurve = .continuous

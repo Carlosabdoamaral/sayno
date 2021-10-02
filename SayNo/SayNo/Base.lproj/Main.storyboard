@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="-2218" y="-655"/>
         </scene>
-        <!--Novo Relato-->
+        <!--New Report-->
         <scene sceneID="HKb-aG-OKe">
             <objects>
                 <viewController id="SlD-rO-Nou" customClass="CreateReportViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +140,7 @@
                             <constraint firstItem="PB3-vD-Ww4" firstAttribute="centerX" secondItem="vdI-c0-iLt" secondAttribute="centerX" id="pb8-X9-iCq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Novo Relato" id="G6H-bX-EQ2">
+                    <navigationItem key="navigationItem" title="New Report" id="G6H-bX-EQ2">
                         <barButtonItem key="backBarButtonItem" title=" " id="7bw-ui-fna"/>
                     </navigationItem>
                     <connections>
@@ -325,13 +325,12 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHg-aZ-NOf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome! Before starting, we need to make sure you don't discourage or speak words that could negatively affect other people." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHg-aZ-NOf">
                                 <rect key="frame" x="20" y="167" width="335" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="8zt-Zr-hrQ"/>
                                     <constraint firstAttribute="height" constant="100" id="Mvu-zf-ZBO"/>
                                 </constraints>
-                                <string key="text">Bem vindo(a)(e)! Antes de voce entrar no app, precisamos ter certeza que voce não irá desmotivar ou falar palavras que podem afetar negativamente as outras pessoas.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
