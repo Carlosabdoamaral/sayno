@@ -8,53 +8,37 @@
 import UIKit
 import FirebaseFirestore
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController {
     //Criando a variável do banco
     let db = Firestore.firestore()
     
-    @IBOutlet var table : UITableView!
+    @IBOutlet weak var mainPost: UIStackView!
+    @IBOutlet weak var mainPostTitle: UILabel!
+    @IBOutlet weak var mainPostDesc: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Menu"
         let macAddress = UIDevice.current.identifierForVendor?.uuidString
         saveMacAddress(mac: macAddress!)
-        
-        table.delegate = self
-        table.dataSource = self
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Hello World"
-        
-        let mySwitch = UISwitch()
-        mySwitch.addTarget(self, action: #selector(didChangeSwitch(_:)), for: .valueChanged)
-        
-        let button = UIButton()
-        
-        cell.accessoryView = button
-        return cell
-    }
-    
-    @objc func didChangeSwitch(_ sender: UISwitch){
-        if sender.isOn{
-            
-        }
-        else{
-            
-        }
+        mainPost.layer.cornerCurve = .continuous
+        mainPost.layer.cornerRadius = 10
     }
     
     func saveMacAddress(mac: String){
         //let dbCollection = db.collection("/user")
         let dbDocument = db.document("/user/\(mac)")
         dbDocument.setData(["mac": mac])
+    }
+    
+    func getLastPost() {
+        let dbCollection = db.collection("/reports").order(by: "Date").limit(to: 1)
+        print(dbCollection)
         
+//        Query query = dbDocument.collection("High Volume")
+//            .orderBy("Time", Query.Direction.DESCENDING)
+//            .limit(1);
+//        query.get().addOnCompleteListener(/* ... */);
     }
     
 }
