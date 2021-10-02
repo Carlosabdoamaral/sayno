@@ -23,14 +23,17 @@ export class HeaderComponent implements OnInit {
     if (page.includes('/contact')) {
       contactLink?.classList.add('active')
     }
-    if (page.includes('/#')) {
+    else if (page.includes('/contact')) {
+      contactLink?.classList.add('active')
+    }
+    else if (page.includes('/download')) {
+      downloadLink?.classList.add('active')
+    }
+    else if (page.includes('/about')) {
+      aboutLink?.classList.add('active')
+    }
+    else {
       homeLink?.classList.add('active')
-    }
-    if (page.includes('/contact')) {
-      contactLink?.classList.add('active')
-    }
-    if (page.includes('/contact')) {
-      contactLink?.classList.add('active')
     }
   }
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.less']
 })
 export class ContactComponent implements OnInit {
-  constructor() { 
-  }
+  constructor(
+  ){}
 
   ngOnInit(): void {
-    let a = 10
   }
 
+  post() {
+
+  }
 }
