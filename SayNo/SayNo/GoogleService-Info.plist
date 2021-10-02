@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>380979575598-vt5bgntop6669toig9kq7260o8l418tc.apps.googleusercontent.com</string>
+	<string>655042847897-o8bmhutp0pa86vf187h4uujrucvprkff.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.380979575598-vt5bgntop6669toig9kq7260o8l418tc</string>
+	<string>com.googleusercontent.apps.655042847897-o8bmhutp0pa86vf187h4uujrucvprkff</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBACUY1arYI8bqkwqKQJ-lJg8gYBtSQHQE</string>
+	<string>AIzaSyDbDgnOwJmjRdy1FWKjGfjOm0NmnrK9y48</string>
 	<key>GCM_SENDER_ID</key>
-	<string>380979575598</string>
+	<string>655042847897</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.amaralzaao.sayno</string>
+	<string>com.amaralzaao.SayNo</string>
 	<key>PROJECT_ID</key>
-	<string>sayno-1339d</string>
+	<string>saynoproject</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sayno-1339d.appspot.com</string>
+	<string>saynoproject.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:380979575598:ios:9550740eae99372422d8bf</string>
+	<string>1:655042847897:ios:13ed87b07de3891a988408</string>
+	<key>DATABASE_URL</key>
+	<string>https://saynoproject-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
