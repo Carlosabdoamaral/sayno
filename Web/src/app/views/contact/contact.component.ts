@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,13 +6,17 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.less']
 })
 export class ContactComponent implements OnInit {
-  constructor(
-  ){}
+
+  missingTitle : Boolean = false;
+  missingDesc : Boolean = false;
+  isOk : Boolean = false;
+  
+  constructor(){
+  }
 
   ngOnInit(): void {
   }
 
   post() {
-
   }
 }

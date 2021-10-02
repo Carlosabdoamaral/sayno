@@ -1,23 +1,24 @@
-<html>
+<html class="">
     <app-header></app-header>
     <app-contactbanner></app-contactbanner>
     <form class="text-center m-5">
-        <div class="alert alert-primary w-50" id="alert" role="alert">
-          Here go the alert
-        </div>
         
-        <mat-form-field class="w-50 c-white" appearance="fill">
-          <mat-label>Title</mat-label>
-          <input matInput placeholder="Your opinion title">
-        </mat-form-field>
-        
-        <br>
+      <div *ngIf="isOk" class="alert alert-success w-50" id="alert" role="alert">Yeah! Your message is going to our databse, thanks!</div>
+      <div *ngIf="missingTitle" class="alert alert-warning w-50" id="alert" role="alert">Ops... Looks like is missing the title</div>
+      <div *ngIf="missingDesc" class="alert alert-warning w-50" id="alert" role="alert">Is almost done... You have to provide a description</div>
 
-        <mat-form-field class="w-50 c-white" appearance="fill">
-          <mat-label>Description</mat-label>
-          <textarea matInput placeholder="Write here what you want to talk for our team" rows="6"></textarea>
-        </mat-form-field>
-        <br>
-        <button class="btn btn-outline-pink w-30" (click)="post()">Send!</button>
+      <mat-form-field class="w-50 c-white" appearance="fill" name="form">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Your opinion title" required>
+      </mat-form-field>
+      
+      <br>
+
+      <mat-form-field class="w-50 c-white" appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Write here what you want to talk for our team" rows="6" required></textarea>
+      </mat-form-field>
+      <br>
+      <button class="btn btn-outline-pink w-30" (click)="post()">Send!</button>
     </form>
 </html>
