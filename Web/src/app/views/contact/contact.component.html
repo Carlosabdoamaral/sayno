@@ -1,20 +1,20 @@
-<html class="">
+<html class="bg-darker">
     <app-header></app-header>
     <app-contactbanner></app-contactbanner>
-    <form class="text-center m-5">
+    <form class="text-center">
         
-      <div *ngIf="isOk" class="alert alert-success w-50" id="alert" role="alert">Yeah! Your message is going to our databse, thanks!</div>
-      <div *ngIf="missingTitle" class="alert alert-warning w-50" id="alert" role="alert">Ops... Looks like is missing the title</div>
-      <div *ngIf="missingDesc" class="alert alert-warning w-50" id="alert" role="alert">Is almost done... You have to provide a description</div>
+      <div *ngIf="isOk" class="alert alert-success" id="alert" role="alert">Yeah! we received your message, thanks!</div>
+      <div *ngIf="missingTitle" class="alert alert-warning" id="alert" role="alert">Ops... Looks like is missing the title</div>
+      <div *ngIf="missingDesc" class="alert alert-warning" id="alert" role="alert">Is almost done... You have to provide a description</div>
 
-      <mat-form-field class="w-50 c-white" appearance="fill" name="form">
+      <mat-form-field class="c-white" id="title" appearance="fill" name="form">
         <mat-label>Title</mat-label>
         <input matInput placeholder="Your opinion title" required>
       </mat-form-field>
       
       <br>
 
-      <mat-form-field class="w-50 c-white" appearance="fill">
+      <mat-form-field class="c-white" appearance="fill" id="desc">
         <mat-label>Description</mat-label>
         <textarea matInput placeholder="Write here what you want to talk for our team" rows="6" required></textarea>
       </mat-form-field>

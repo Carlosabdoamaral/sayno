@@ -7,9 +7,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  missingTitle : Boolean = false;
-  missingDesc : Boolean = false;
-  isOk : Boolean = false;
+  missingTitle : Boolean = true;
+  missingDesc : Boolean = true;
+  isOk : Boolean = true;
   
   constructor(){
   }
