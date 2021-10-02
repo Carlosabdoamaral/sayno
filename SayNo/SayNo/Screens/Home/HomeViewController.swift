@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
     }
     
     func getLastPost() {
-        let dbCollection = db.collection("report").order(by: "date", descending: true)
+//        let dbCollection = db.collection("report").order(by: "date", descending: true)
         
 //        Query query = dbDocument.collection("High Volume")
 //            .orderBy("Time", Query.Direction.DESCENDING)
