@@ -1,23 +1,24 @@
-<html>
+<html class="bg-darker">
     <app-header></app-header>
-    
-    <div *ngIf=10==10 class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
     <app-contactbanner></app-contactbanner>
-    <form class="text-center m-5">
-        <mat-form-field class="w-50 c-white" appearance="fill">
-          <mat-label>Title</mat-label>
-          <input matInput placeholder="Your opinion title">
-        </mat-form-field>
-        <br>
-        <mat-form-field class="w-50 c-white" appearance="fill">
-          <mat-label>Description</mat-label>
-          <textarea matInput placeholder="Write here what you want to talk for our team" rows="6"></textarea>
-        </mat-form-field>
-        <br>
-        <button class="btn btn-outline-pink w-30">Send!</button>
+    <form class="text-center">
+        
+      <div *ngIf="isOk" class="alert alert-success" id="alert" role="alert">Yeah! we received your message, thanks!</div>
+      <div *ngIf="missingTitle" class="alert alert-warning" id="alert" role="alert">Ops... Looks like is missing the title</div>
+      <div *ngIf="missingDesc" class="alert alert-warning" id="alert" role="alert">Is almost done... You have to provide a description</div>
+
+      <mat-form-field class="c-white" id="title" appearance="fill" name="form">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Your opinion title" required>
+      </mat-form-field>
+      
+      <br>
+
+      <mat-form-field class="c-white" appearance="fill" id="desc">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Write here what you want to talk for our team" rows="6" required></textarea>
+      </mat-form-field>
+      <br>
+      <button class="btn btn-outline-pink w-30" (click)="post()">Send!</button>
     </form>
 </html>

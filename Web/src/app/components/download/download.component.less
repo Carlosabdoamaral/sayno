@@ -1,11 +1,35 @@
-.download{
-    display: grid;
-    grid-template: 'apple android';   
-}
-
 div {
-    background-color: #fff;
     width: 40vw;
     margin-left: auto;
     margin-right: auto;
+    color: #FFF;
+    border: 2px solid #ff375f;
+    border-radius: 5px;
+}
+
+section {
+    display: grid;
+    grid-template: 
+    'ios android'
+    ;
+}
+
+@media (max-width: 425px) {
+    div {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: #FFF;
+        border: 2px solid transparent;
+        border-radius: 5px;
+    }
+    
+    section {
+        display: grid;
+        grid-template: 
+        'ios ios'
+        'android android'
+        ;
+        width: 100vw;
+    }
 }

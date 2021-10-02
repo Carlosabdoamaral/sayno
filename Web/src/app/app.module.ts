@@ -14,6 +14,11 @@ import { ContactComponent } from './views/contact/contact.component';
 import { LoginComponent } from './views/login/login.component';
 import { IndexComponent } from './views/index/index.component';
 import { ContactbannerComponent } from './components/banners/contactbanner/contactbanner.component';
+import { AboutComponent } from './components/about/about.component';
+import { DownloadViewComponent } from './views/download-view/download-view.component';
+import { DownloadbannerComponent } from './components/banners/downloadbanner/downloadbanner.component';
+import { AboutViewComponent } from './views/about-view/about-view.component';
+import { AboutbannerComponent } from './components/banners/aboutbanner/aboutbanner.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { ContactbannerComponent } from './components/banners/contactbanner/conta
     ContactComponent,
     LoginComponent,
     IndexComponent,
-    ContactbannerComponent
+    ContactbannerComponent,
+    AboutComponent,
+    DownloadViewComponent,
+    DownloadbannerComponent,
+    AboutViewComponent,
+    AboutbannerComponent
   ],
   imports: [
     BrowserModule,

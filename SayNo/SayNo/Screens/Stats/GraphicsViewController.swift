@@ -56,10 +56,20 @@ class GraphicsViewController: UIViewController, ChartViewDelegate {
         }
         let set = LineChartDataSet(entries: entries)
         
-        set.colors = ChartColorTemplates.pastel()
+//        set.colors = ChartColorTemplates.joyful()
+        
+        self.lineChart.legend.textColor = UIColor.white
+        self.lineChart.leftAxis.labelTextColor = UIColor.white
+        self.lineChart.rightAxis.labelTextColor = UIColor.white
+        self.lineChart.xAxis.labelTextColor = UIColor.white
+        self.lineChart.rightAxis.axisLineColor = UIColor.white
+        self.lineChart.leftAxis.axisLineColor = UIColor.white
+        
         let data = LineChartData(dataSet: set)
         lineChart.data = data
-        
+        lineChart.tintColor = .white
+        lineChart.layer.cornerRadius = 10
+        lineChart.layer.cornerCurve = .continuous
     }
     
     
