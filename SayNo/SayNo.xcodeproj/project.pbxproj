@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -109,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				35F9C6C926F9F5FB0078967E /* Tests */,
-				35B5467226F3E1CE0098D47F /* Assets */,
 				35B5467126F3E1C80098D47F /* Screens */,
 				35B5465D26F3E11D0098D47F /* AppDelegate.swift */,
 				35B5465F26F3E11D0098D47F /* SceneDelegate.swift */,
@@ -135,13 +134,6 @@
 				35B5468526F56F660098D47F /* Dropdown menu */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		35B5467226F3E1CE0098D47F /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		35B5468526F56F660098D47F /* Dropdown menu */ = {
@@ -226,7 +218,6 @@
 				CB46665E1FC5BA053CE3E67D /* Pods-SayNo.debug.xcconfig */,
 				575A1D985E0AF3ED00A166BF /* Pods-SayNo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
