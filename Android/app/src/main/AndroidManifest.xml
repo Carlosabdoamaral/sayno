@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SayNo">
         <activity
+            android:name=".NewReport"
+            android:exported="true" />
+        <activity
             android:name=".YourReports"
             android:exported="true" />
         <activity

@@ -11,4 +11,6 @@
 
     <string name="yourReportsTitle">Your reports</string>
     <string name="yourReportsAddButton">New</string>
+
+    <string name="newReportTitle">New report</string>
 </resources>
