@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SayNo">
         <activity
+            android:name=".Terms"
+            android:exported="true" />
+        <activity
             android:name=".Blocked"
             android:exported="true" />
         <activity
