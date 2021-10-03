@@ -3,4 +3,7 @@
 
     <string name="notReadyTitle">Ops…</string>
     <string name="notReadySubtitle">We are developing this screen</string>
+
+    <string name="blockedLabel">You have been blocked for:</string>
+    <string name="blockedDays">15 Dias</string>
 </resources>
