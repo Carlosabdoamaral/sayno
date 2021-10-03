@@ -19,6 +19,9 @@ import { DownloadViewComponent } from './views/download-view/download-view.compo
 import { DownloadbannerComponent } from './components/banners/downloadbanner/downloadbanner.component';
 import { AboutViewComponent } from './views/about-view/about-view.component';
 import { AboutbannerComponent } from './components/banners/aboutbanner/aboutbanner.component';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environment } from '../../src/environments/environment'
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import { AboutbannerComponent } from './components/banners/aboutbanner/aboutbann
     MatTabsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    provideFirebaseApp(() => initializeApp( environment.firebase, 'saynoproject' )),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
