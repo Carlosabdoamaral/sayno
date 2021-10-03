@@ -7,16 +7,16 @@
       <div *ngIf="missingTitle" class="alert alert-warning" id="alert" role="alert">Ops... Looks like is missing the title</div>
       <div *ngIf="missingDesc" class="alert alert-warning" id="alert" role="alert">Is almost done... You have to provide a description</div>
 
-      <mat-form-field class="c-white" id="title" appearance="fill" name="form">
+      <mat-form-field class="c-white" appearance="fill" id="title" name="form">
         <mat-label>Title</mat-label>
-        <input matInput placeholder="Your opinion title" required>
+        <input matInput placeholder="Your opinion title" #title required>
       </mat-form-field>
       
       <br>
 
       <mat-form-field class="c-white" appearance="fill" id="desc">
         <mat-label>Description</mat-label>
-        <textarea matInput placeholder="Write here what you want to talk for our team" rows="6" required></textarea>
+        <textarea matInput placeholder="Write here what you want to talk for our team" rows="6" #desc required></textarea>
       </mat-form-field>
       <br>
       <button class="btn btn-outline-pink w-30" (click)="post()">Send!</button>

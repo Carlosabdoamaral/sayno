@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -7,10 +7,12 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  missingTitle : Boolean = true;
-  missingDesc : Boolean = true;
-  isOk : Boolean = true;
-  
+  missingTitle : Boolean = false;
+  missingDesc : Boolean = false;
+  isOk : Boolean = false;
+  @ViewChild('title') title: ElementRef | undefined
+  @ViewChild('desc') desc: ElementRef | undefined
+
   constructor(){
   }
 
@@ -18,5 +20,15 @@ export class ContactComponent implements OnInit {
   }
 
   post() {
+    const title = this.title?.nativeElement.value;
+    const desc = this.title?.nativeElement.value;
+    const date = new Date
+
+    // if (title && desc) {
+    //   this.isOk = true;
+    // }
+    // else {
+    //   this.isOk = false;
+    // }
   }
 }
