@@ -1,3 +1,16 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">SayNo</string>
+
+    <string name="notReadyTitle">Ops…</string>
+    <string name="notReadySubtitle">We are developing this screen</string>
+
+    <string name="blockedLabel">You have been blocked for:</string>
+    <string name="blockedDays">15 Dias</string>
+
+    <string name="termsDetails">Welcome! Before starting, we need to make sure you dont discourage or speak words that could negatively affect other people</string>
+
+    <string name="yourReportsTitle">Your reports</string>
+    <string name="yourReportsAddButton">New</string>
+
+    <string name="newReportTitle">New report</string>
 </resources>
