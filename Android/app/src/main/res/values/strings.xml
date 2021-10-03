@@ -8,4 +8,7 @@
     <string name="blockedDays">15 Dias</string>
 
     <string name="termsDetails">Welcome! Before starting, we need to make sure you dont discourage or speak words that could negatively affect other people</string>
+
+    <string name="yourReportsTitle">Your reports</string>
+    <string name="yourReportsAddButton">New</string>
 </resources>
