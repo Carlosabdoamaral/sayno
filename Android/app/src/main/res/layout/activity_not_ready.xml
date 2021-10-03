@@ -49,6 +49,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/ic_baseline_computer_56"
-        android:tint="@color/pink"
-        />
+        app:tint="@color/pink" />
 </androidx.constraintlayout.widget.ConstraintLayout>
