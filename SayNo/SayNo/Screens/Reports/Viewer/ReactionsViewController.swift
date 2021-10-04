@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CommentAndReactThanksViewController: UIViewController {
+class ReactionsViewController: UIViewController {
 
     @IBOutlet weak var reaction1: UIButton!
     
