@@ -6,16 +6,18 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import Firebase
 
 class HomeCollectionViewController: UICollectionViewController {
 
-    let dataSource: [String] = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Argentina", "Chile", "Paraguai", "Bolivia", "Guiana Francesa", "Uruguai", "Equador "]
-    
+    var dataSource: [String] = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Argentina", "Chile", "Paraguai", "Bolivia", "Guiana Francesa", "Uruguai", "Equador"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home"
-
+        getData()
+        makePersistence()
     }
     
     //Quantidade de itens
@@ -24,6 +26,7 @@ class HomeCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        getData()
         var cell = UICollectionViewCell()
         if let reportCell =  collectionView.dequeueReusableCell(withReuseIdentifier: "Report", for: indexPath) as? ReportCollectionViewCell {
             reportCell.configure(with: dataSource[indexPath.row])
@@ -35,4 +38,29 @@ class HomeCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Title: \(dataSource[indexPath.row ])")
     }
+    
+    func makePersistence() {
+        let settings = FirestoreSettings()
+        settings.isPersistenceEnabled = true
+
+        // Enable offline data persistence
+        let db = Firestore.firestore()
+        db.settings = settings
+    }
+    
+    func getData() {
+        let db = Firestore.firestore()
+        db.collection("report").whereField("isValid", isEqualTo: true)
+        .getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.dataSource.append("Toi")
+                }
+            }
+        }
+    }
+    
 }

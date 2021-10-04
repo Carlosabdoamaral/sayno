@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class ReportCollectionViewCell: UICollectionViewCell {
     
-    
     @IBOutlet weak var title: UILabel!
+
+    
     func configure(with title: String) {
         self.title.text = title
         self.layer.cornerRadius = 10
