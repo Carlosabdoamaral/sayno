@@ -20,7 +20,7 @@ class CreateReportViewController: UIViewController, UITextFieldDelegate {
             if let description = descriptionField.text, !description.isEmpty{
                 errorLabel.alpha = 0
                 errorLabel.text = ""
-                saveData(id: 1, mac: self.macAddress!, title: title, description: description)
+                saveData(mac: self.macAddress!, title: title, description: description)
                 
                 let alert = UIAlertController(title: "Success!", message: "Your report is going to ourdatabase.", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("Okay!", comment: "Default action"), style: .default, handler: { _ in
@@ -44,11 +44,16 @@ class CreateReportViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    func saveData(id: Int, mac: String, title: String, description: String){
+    func saveData(mac: String, title: String, description: String){
         // /colection/document
         let date = Date()
         let docRef = db.document("/report/\(date)")
-        docRef.setData(["id": id, "date": date, "mac": mac, "title": title, "description": description])
+        docRef.setData([
+                        "date": date,
+                        "mac": mac,
+                        "title": title,
+                        "description": description,
+                        "isValid": true])
     }
 
 }
