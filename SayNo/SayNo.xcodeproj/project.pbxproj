@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1266EE2EA131ED56469B243B /* Pods_SayNo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B572EB18AC95257BDC56680 /* Pods_SayNo.framework */; };
 		35544CDE2708355D0014F31C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35544CDD2708355D0014F31C /* GoogleService-Info.plist */; };
+		355CCCEC270A9E8F00FF0597 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355CCCEB270A9E8F00FF0597 /* CollectionViewController.swift */; };
+		355CCCEE270AA0D700FF0597 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355CCCED270AA0D700FF0597 /* CollectionViewCell.swift */; };
 		35B5465E26F3E11D0098D47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5465D26F3E11D0098D47F /* AppDelegate.swift */; };
 		35B5466026F3E11D0098D47F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5465F26F3E11D0098D47F /* SceneDelegate.swift */; };
 		35B5466226F3E11D0098D47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5466126F3E11D0098D47F /* ViewController.swift */; };
@@ -25,13 +27,12 @@
 		35B5468426F567550098D47F /* DropMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5468326F567550098D47F /* DropMenuViewController.swift */; };
 		35B5469126F586700098D47F /* CreateReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5469026F586700098D47F /* CreateReportViewController.swift */; };
 		35B5469426F594220098D47F /* GraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5469326F594220098D47F /* GraphicsViewController.swift */; };
-		35F9C6CB26F9F61B0078967E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F9C6CA26F9F61B0078967E /* CollectionViewController.swift */; };
-		35F9C6CE26F9FAA00078967E /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F9C6CC26F9FAA00078967E /* MyCollectionViewCell.swift */; };
-		35F9C6CF26F9FAA00078967E /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F9C6CD26F9FAA00078967E /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35544CDD2708355D0014F31C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		355CCCEB270A9E8F00FF0597 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		355CCCED270AA0D700FF0597 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		35B5465A26F3E11D0098D47F /* SayNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B5465D26F3E11D0098D47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B5465F26F3E11D0098D47F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,9 +51,6 @@
 		35B5468326F567550098D47F /* DropMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMenuViewController.swift; sourceTree = "<group>"; };
 		35B5469026F586700098D47F /* CreateReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReportViewController.swift; sourceTree = "<group>"; };
 		35B5469326F594220098D47F /* GraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsViewController.swift; sourceTree = "<group>"; };
-		35F9C6CA26F9F61B0078967E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		35F9C6CC26F9FAA00078967E /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		35F9C6CD26F9FAA00078967E /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		575A1D985E0AF3ED00A166BF /* Pods-SayNo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SayNo.release.xcconfig"; path = "Target Support Files/Pods-SayNo/Pods-SayNo.release.xcconfig"; sourceTree = "<group>"; };
 		5B572EB18AC95257BDC56680 /* Pods_SayNo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SayNo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB46665E1FC5BA053CE3E67D /* Pods-SayNo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SayNo.debug.xcconfig"; path = "Target Support Files/Pods-SayNo/Pods-SayNo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,9 +203,8 @@
 		35F9C6C926F9F5FB0078967E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				35F9C6CA26F9F61B0078967E /* CollectionViewController.swift */,
-				35F9C6CC26F9FAA00078967E /* MyCollectionViewCell.swift */,
-				35F9C6CD26F9FAA00078967E /* MyCollectionViewCell.xib */,
+				355CCCEB270A9E8F00FF0597 /* CollectionViewController.swift */,
+				355CCCED270AA0D700FF0597 /* CollectionViewCell.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -281,7 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F9C6CF26F9FAA00078967E /* MyCollectionViewCell.xib in Resources */,
 				35B5466A26F3E1210098D47F /* LaunchScreen.storyboard in Resources */,
 				35B5466726F3E1210098D47F /* Assets.xcassets in Resources */,
 				35B5466526F3E11D0098D47F /* Main.storyboard in Resources */,
@@ -359,14 +355,14 @@
 				35B5469426F594220098D47F /* GraphicsViewController.swift in Sources */,
 				35B5467E26F4BD210098D47F /* CommentAndReactThanksViewController.swift in Sources */,
 				35B5466226F3E11D0098D47F /* ViewController.swift in Sources */,
-				35F9C6CB26F9F61B0078967E /* CollectionViewController.swift in Sources */,
+				355CCCEC270A9E8F00FF0597 /* CollectionViewController.swift in Sources */,
+				355CCCEE270AA0D700FF0597 /* CollectionViewCell.swift in Sources */,
 				35B5468226F53E480098D47F /* MyReportsViewController.swift in Sources */,
 				35B5467A26F4B7170098D47F /* ReportDetailsViewController.swift in Sources */,
 				35B5465E26F3E11D0098D47F /* AppDelegate.swift in Sources */,
 				35B5466026F3E11D0098D47F /* SceneDelegate.swift in Sources */,
 				35B5467426F3E2630098D47F /* HomeViewController.swift in Sources */,
 				35B5468426F567550098D47F /* DropMenuViewController.swift in Sources */,
-				35F9C6CE26F9FAA00078967E /* MyCollectionViewCell.swift in Sources */,
 				35B5468026F4C8600098D47F /* BlockedViewController.swift in Sources */,
 				35B5467626F3E3B30098D47F /* TermsViewController.swift in Sources */,
 				35B5467826F430470098D47F /* SettingsViewController.swift in Sources */,
