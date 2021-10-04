@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Título do post-->
+        <!--Title-->
         <scene sceneID="TSg-t7-arh">
             <objects>
-                <viewController id="uw0-ly-Ioe" customClass="ReportDetailsViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Title" id="uw0-ly-Ioe" customClass="ReportDetailsViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="djR-Hg-W1i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="-2218.4000000000001" y="124.58770614692655"/>
         </scene>
-        <!--Comment And React Thanks View Controller-->
+        <!--Reactions View Controller-->
         <scene sceneID="fIv-Kb-14k">
             <objects>
-                <viewController id="PBX-Wn-bGV" customClass="CommentAndReactThanksViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PBX-Wn-bGV" customClass="ReactionsViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="24k-V6-N9B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,14 +292,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nME-pY-Tf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3642" y="873"/>
+            <point key="canvasLocation" x="-4396" y="903"/>
         </scene>
         <!--Terms View Controller-->
         <scene sceneID="4dN-vI-V8x">
             <objects>
                 <viewController id="VeN-P8-VqX" customClass="TermsViewController" customModule="SayNo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9z6-vr-RSQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jba-cw-ntn">
@@ -378,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJS-Af-cVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4294" y="125"/>
+            <point key="canvasLocation" x="-4396" y="125"/>
         </scene>
         <!--Home Collection View Controller-->
         <scene sceneID="MC1-oK-Jr1">
@@ -484,7 +484,14 @@
                             <outlet property="delegate" destination="kEi-sX-gEG" id="vy1-e6-TxG"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="UTC-sz-Xpt"/>
+                    <navigationItem key="navigationItem" id="UTC-sz-Xpt">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle.fill" catalog="system" style="plain" id="fHm-1G-lWm">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <connections>
+                                <segue destination="VeN-P8-VqX" kind="presentation" id="hQv-O6-Xyu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qk0-TP-PPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -738,7 +745,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e3A-ma-wkt"/>
+        <segue reference="Elm-UU-zh0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.up.message.fill" catalog="system" width="128" height="113"/>
@@ -748,6 +755,7 @@
         <image name="hammer.fill" catalog="system" width="128" height="117"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
