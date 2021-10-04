@@ -1,19 +1,21 @@
 //
-//  CollectionViewController.swift
+//  HomeCollectionViewController.swift
 //  SayNo
 //
-//  Created by JEFERSON AMARAL on 03/10/21.
+//  Created by JEFERSON AMARAL on 04/10/21.
 //
 
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+class HomeCollectionViewController: UICollectionViewController {
 
-    let dataSource: [String] = ["Brasil", "Argentina", "Chile", "Paraguai", "Bolivia", "Guiana Francesa", "Uruguai", "Equador "]
+    let dataSource: [String] = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Argentina", "Chile", "Paraguai", "Bolivia", "Guiana Francesa", "Uruguai", "Equador "]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        title = "Home"
+
     }
     
     //Quantidade de itens
@@ -21,12 +23,10 @@ class CollectionViewController: UICollectionViewController {
         return dataSource.count
     }
     
-      
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = UICollectionViewCell()
-        if let reportCell =  collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CollectionViewCell {
+        if let reportCell =  collectionView.dequeueReusableCell(withReuseIdentifier: "Report", for: indexPath) as? ReportCollectionViewCell {
             reportCell.configure(with: dataSource[indexPath.row])
-            
             cell = reportCell
         }
         return cell
