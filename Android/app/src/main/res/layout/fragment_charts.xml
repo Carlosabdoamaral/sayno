@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment"
+    tools:context=".ChartsFragment"
     android:background="@color/bg">
 
-    <TextView
+<TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/homeTitle"
+        android:text="@string/chartTitle"
         android:textAlignment="viewStart"
         android:textColor="@color/pink"
         android:textSize="34sp"

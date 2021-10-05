@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/yourReportsFragment">
 
     <fragment
         android:id="@+id/chatFragment"
@@ -15,4 +15,14 @@
         android:name="com.amaralzaao.sayno.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/chartsFragment"
+        android:name="com.amaralzaao.sayno.ChartsFragment"
+        android:label="fragment_charts"
+        tools:layout="@layout/fragment_charts" />
+    <fragment
+        android:id="@+id/yourReportsFragment"
+        android:name="com.amaralzaao.sayno.yourReportsFragment"
+        android:label="fragment_your_reports"
+        tools:layout="@layout/fragment_your_reports" />
 </navigation>
