@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgq-IT-fPc">
-                                <rect key="frame" x="20" y="0.0" width="335" height="304.5"/>
+                                <rect key="frame" x="20" y="96" width="335" height="304.5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget nisi enim. Aenean non blandit quam. Proin consectetur, leo vitae hendrerit ultricies, eros nisi auctor sapien, et viverra risus sem ac sem. Quisque malesuada nulla id pellentesque gravida. Vestibulum vel consequat lacus, ut condimentum mauris. Sed sit amet tellus rhoncus, pellentesque nisi facilisis, condimentum arcu. Pellentesque accumsan ligula sapien. Donec rutrum augue et leo finibus, ut maximus lacus efficitur. Aliquam risus nulla, fermentum vel blandit eu, elementum vel urna. Mauris dignissim purus facilisis, faucibus sem ut, pellentesque urna. Nulla feugiat ultricies diam. Duis ut rutrum elit. Praesent vel pellentesque nisl, sed fermentum nisi.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ho2-au-458">
-                                <rect key="frame" x="100" y="617" width="174" height="30"/>
+                                <rect key="frame" x="100" y="568" width="174" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9tz-AR-cqc"/>
@@ -53,7 +53,9 @@
                             <constraint firstItem="Szt-cZ-I8S" firstAttribute="trailing" secondItem="Ho2-au-458" secondAttribute="trailing" constant="101" id="pd7-ae-fB2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Título do post" id="HOA-lb-8Oy"/>
+                    <navigationItem key="navigationItem" title="Título do post" id="HOA-lb-8Oy">
+                        <barButtonItem key="backBarButtonItem" title=" " id="naY-pX-7bq"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="commentButton" destination="Ho2-au-458" id="CQp-Jd-Zdl"/>
                     </connections>
@@ -292,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nME-pY-Tf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4396" y="903"/>
+            <point key="canvasLocation" x="-4314" y="125"/>
         </scene>
         <!--Terms View Controller-->
         <scene sceneID="4dN-vI-V8x">
@@ -378,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJS-Af-cVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4396" y="125"/>
+            <point key="canvasLocation" x="-4986" y="125"/>
         </scene>
         <!--Home Collection View Controller-->
         <scene sceneID="MC1-oK-Jr1">
@@ -444,6 +446,9 @@
                                                     <state key="normal" image="paperplane.fill" catalog="system">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="uw0-ly-Ioe" kind="show" id="YCH-0X-YDD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -745,7 +750,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Elm-UU-zh0"/>
+        <segue reference="e3A-ma-wkt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.up.message.fill" catalog="system" width="128" height="113"/>
