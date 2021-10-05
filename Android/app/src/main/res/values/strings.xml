@@ -1,32 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">SayNo</string>
 
-    <string name="notReadyTitle">Ops…</string>
     <string name="notReadySubtitle">We are developing this screen</string>
-
     <string name="blockedLabel">You have been blocked for:</string>
     <string name="blockedDays">15 Dias</string>
-
     <string name="termsDetails">Welcome! Before starting, we need to make sure you dont discourage or speak words that could negatively affect other people</string>
-
-    <string name="yourReportsTitle">Your reports</string>
     <string name="yourReportsAddButton">New</string>
-
-    <string name="newReportTitle">New report</string>
+    <string name="yourReportsTitle">Your reports</string>
 
     <string name="homeTitle">Home</string>
-
-    <string name="detailsDescriptionTemplate">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum purus varius, sollicitudin arcu et, sollicitudin leo. Ut vel venenatis odio, vel suscipit sapien. Vivamus consequat, odio vel molestie euismod, turpis neque feugiat nibh, at ultrices dui justo eu lectus. Nam euismod, nisl et pretium hendrerit, tellus purus ultrices dui, eu fringilla urna nibh vel neque. In non dolor at nulla aliquet condimentum. Proin ullamcorper porttitor tellus bibendum mollis. Nam finibus ac felis eu mollis.
-        Phasellus et mi quis diam posuere feugiat. Etiam iaculis nulla et accumsan accumsan. Fusce eu enim quis nulla maximus venenatis. Pellentesque finibus dolor at sollicitudin rutrum. Cras aliquet massa et malesuada suscipit. Donec at mauris maximus, euismod massa eget, consequat felis. Aenean luctus odio at nibh blandit, quis condimentum neque cursus. Cras dapibus arcu sit amet ante tristique, vitae varius mi luctus. Quisque rhoncus mauris at luctus imperdiet. Etiam pharetra mattis ipsum. Curabitur tincidunt fermentum ipsum, quis pulvinar enim fermentum id. Nullam tellus lacus, tincidunt nec tristique sit amet, posuere eu turpis. Cras cursus ullamcorper leo, eu iaculis orci ullamcorper in
-        Phasellus et mi quis diam posuere feugiat. Etiam iaculis nulla et accumsan accumsan. Fusce eu enim quis nulla maximus venenatis. Pellentesque finibus dolor at sollicitudin rutrum. Cras aliquet massa et malesuada suscipit. Donec at mauris maximus, euismod massa eget, consequat felis. Aenean luctus odio at nibh blandit, quis condimentum neque cursus. Cras dapibus arcu sit amet ante tristique, vitae varius mi luctus. Quisque rhoncus mauris at luctus imperdiet. Etiam pharetra mattis ipsum. Curabitur tincidunt fermentum ipsum, quis pulvinar enim fermentum id. Nullam tellus lacus, tincidunt nec tristique sit amet, posuere eu turpis. Cras cursus ullamcorper leo, eu iaculis orci ullamcorper in
-        Phasellus et mi quis diam posuere feugiat. Etiam iaculis nulla et accumsan accumsan. Fusce eu enim quis nulla maximus venenatis. Pellentesque finibus dolor at sollicitudin rutrum. Cras aliquet massa et malesuada suscipit. Donec at mauris maximus, euismod massa eget, consequat felis. Aenean luctus odio at nibh blandit, quis condimentum neque cursus. Cras dapibus arcu sit amet ante tristique, vitae varius mi luctus. Quisque rhoncus mauris at luctus imperdiet. Etiam pharetra mattis ipsum. Curabitur tincidunt fermentum ipsum, quis pulvinar enim fermentum id. Nullam tellus lacus, tincidunt nec tristique sit amet, posuere eu turpis. Cras cursus ullamcorper leo, eu iaculis orci ullamcorper in
-    </string>
-    <string name="title_activity_home">Home</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="chartTitle">Chart</string>
+    <string name="newReportTitle">New report</string>
+    <string name="chatTitle">Chat</string>
+    <string name="notReadyTitle">Ops…</string>
 </resources>

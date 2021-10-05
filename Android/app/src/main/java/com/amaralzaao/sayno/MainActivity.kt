@@ -2,20 +2,13 @@ package com.amaralzaao.sayno
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.amaralzaao.sayno.R.layout.activity_main
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.amaralzaao.sayno.R.layout.activity_new_report
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(activity_main)
-
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val navController = findNavController(R.id.fragment)
-
-        bottomNavigationView.setupWithNavController(navController)
+        setContentView(activity_new_report)
     }
 
 }

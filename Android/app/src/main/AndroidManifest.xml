@@ -10,29 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SayNo">
         <activity
-            android:name=".Chat"
-            android:exported="true" />
-        <activity
-            android:name=".Home"
-            android:exported="true"
-            android:label="@string/title_activity_home" />
-        <activity
-            android:name=".ReportDetails"
-            android:exported="true" />
-        <activity
             android:name=".NewReport"
-            android:exported="true" />
-        <activity
-            android:name=".YourReports"
-            android:exported="true" />
-        <activity
-            android:name=".Terms"
-            android:exported="true" />
-        <activity
-            android:name=".Blocked"
-            android:exported="true" />
-        <activity
-            android:name=".NotReady"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

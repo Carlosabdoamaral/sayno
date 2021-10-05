@@ -5,17 +5,19 @@
       <map>
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_blocked.xml" value="0.33" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
-        <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_new_report.xml" value="0.33" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_not_ready.xml" value="0.33" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_report_details.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_terms.xml" value="0.33" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/activity_your_reports.xml" value="0.33" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/chat_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/fragment_charts.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/fragment_chat.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/fragment_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/fragment_your_reports.xml" value="0.25" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/layout/main_fragment.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/GitHub/SayNo/Android/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
