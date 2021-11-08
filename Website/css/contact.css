@@ -1,0 +1,55 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.contact > div > h3 {
+    color: #FF375F;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: left;
+}
+
+.contact > form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    background-color: #FFF;
+    border: none;
+    height: max-content;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.contact > form > input,
+.contact > form > textarea {
+    padding: 0.7em;
+    border: none;
+    margin: 0.5em;
+    background: #e2e1e1;
+    border-radius: 5px;
+}
+
+.contact > form > textarea {
+    font-size: 0.85rem;
+}
+
+.contact > form > button {
+    background: #FF375F;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 1em;
+    color: #FFF;
+}
+
+.contact > form > button:hover {
+    cursor: pointer;
+}
+
+.contact > form > button:active {
+    text-decoration: underline;
+}

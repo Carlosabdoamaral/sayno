@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/download.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
@@ -22,28 +23,74 @@
         <p>Diga não</p>
     </section>
 
-    <section class="download">
-        <div>
-            <h2>iOS</h2>
-            <input type="button" value="Download">
+    <section class="about">
+        <div class="title-and-desc">
+            <h3>About the <br> Project</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta modi, explicabo obcaecati officia minus, sit deleniti quibusdam accusamus adipisci quas incidunt praesentium est esse ea enim quae atque dolorem commodi.
+                Quaerat enim unde dicta explicabo eius velit at ipsum, adipisci, autem maxime molestias quibusdam voluptas voluptatibus nostrum impedit aspernatur aut accusantium assumenda mollitia. Distinctio labore nobis similique quia esse iste!
+            </p>
         </div>
 
-        <div>
-            <h2>Android</h2>
-            <input type="button" value="Download">
+        <div class="about-project">
+            <img src="./iphoneMockup.jpeg" alt="About project image">
         </div>
     </section>
 
-    <section class="about">
-        <div class="about-us">
-            <h2>The team</h2>
-            <div class="underline"></div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non, repudiandae dolor magni cumque vel nisi iure ipsa pariatur aut libero aliquam sed fugit saepe, adipisci beatae optio dolores iusto!
-                Minima nulla, animi dolore, ipsum aspernatur perferendis dicta tempore atque adipisci similique eos est, aliquam quis facere autem! Deserunt ipsum enim autem odio totam rem amet. Fugit et quibusdam vitae.
-                Illo earum esse perspiciatis, voluptas ex minus veniam, ullam, vitae velit illum iure repellat? Minus, nostrum voluptas? Fugit omnis illum ut adipisci reprehenderit, laboriosam officiis. Unde quibusdam iure excepturi soluta.
-            </p>
+    <section class="download">
+        <div>
+            <h3>Download <br> Now</h3>
         </div>
+
+        <div class="download-options">
+            <div class="ios">
+                <!--<i class="fab fa-apple"></i>-->
+                <p class="option-title">iOS</p>
+                <p class="option-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    A obcaecati consequuntur quisquam dolores repellat ad magnam 
+                    omnis aliquam, illo ipsa ipsum voluptatum fugit reprehenderit 
+                    possimus delectus mollitia! Tempora, minus sequi!
+                </p>
+                <input type="button" value="Download">
+            </div>
+
+            <div class="ios">
+                <!--<i class="fab fa-android"></i>-->
+                <p class="option-title">Android</p>
+                <p class="option-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    A obcaecati consequuntur quisquam dolores repellat ad magnam 
+                    omnis aliquam, illo ipsa ipsum voluptatum fugit reprehenderit 
+                    possimus delectus mollitia! Tempora, minus sequi!
+                </p>
+                <input type="button" value="Download">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div>
+            <h3>Contact <br> Us</h3>
+        </div>
+
+        <form action="https://formsubmit.co/carlosabdoamaral@gmail.com" method="POST">
+
+            <!-- FORM SUBMIT ITEMS -->
+            <input type="hidden" name="_next" value="https://sayno.netlify.app/">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="text" name="name" id="nameInput" class="input" placeholder="Nome*" required>
+            <input type="email" name="email" id="emailInput" class="input" placeholder="E-mail*" required>
+            <input type="tel" name="telefone" id="telInput" class="input" placeholder="Telefone">
+            <input type="text" name="_subject" id="assuntoInput" class="input" placeholder="Assunto*" required>
+            <textarea name="message" id="message" rows="6" class="input" placeholder="Mensagem*" required></textarea>
+
+            <small>* Campos obrigatórios</small>
+            <button type="submit">Enviar!</button>
+        </form>
     </section>
 
     <footer>

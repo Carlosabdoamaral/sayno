@@ -1,38 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .about {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2em auto;
+    justify-content: space-between;
+    padding: 0 10%;
     width: 100%;
-    background: #FF375F;
-    padding: 2em 2em;
 }
 
-.about > div {
-    margin: 0 3em;
-    background: #FFF;
-    border-radius: 5px;
-}
-
-.about > .about-us > h2,
-.about > .about-app > h2 {
+.about > div > h3 {
     color: #FF375F;
-    padding: 0.7em 0.7em;
-    text-align: center;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: left;
 }
 
-.about > .about-us > p,
-.about > .about-app > p {
-    padding-top: 0.5em;
-    color: #242424;
-    font-weight: 300;
-    padding: 1em;
+.about > .title-and-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.underline {
-    height: 3px;
-    width: 3em;
-    background-color: #FF375F;
-    border-radius: 2px;
-    margin: 0 auto;
+.about > .title-and-desc > p {
+    width: 70%;
+    color: #f2eddb;
+    font-weight: 200;
+}
+.about > .about-project > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }

@@ -1,26 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .download {
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 10%;
     width: 100%;
 }
 
-.download > div {
-    text-align: center;
-    width: fit-content;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #fff;
-    padding: 1em;
-    border-radius: 5px;
+.download > div > h3 {
+    color: #FF375F;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: left;
 }
 
-.download > div > input {
-    padding: 0.3em;
+.download-options {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    font-family: 'Raleway';
+}
+
+.download-options > div {
+    margin: 0 0.5em;
+}
+
+.download-options > div > i{
+    background: #FFF;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.download-options > div > .option-title {
+    color: #f2eddb;
+    margin: 1em 0;
+}
+
+.download-options > div > .option-desc {
+    color: #f2eddb;
+    font-weight: 200;
+}
+
+.download-options > div > input {
+    width: 100%;
     background: #FF375F;
     border: none;
     border-radius: 5px;
-    margin-top: 0.3em;
     color: #FFF;
+    height: fit-content;
+    margin: 0.5em 0;
+    padding: 0.5em 0.5em;
 }
