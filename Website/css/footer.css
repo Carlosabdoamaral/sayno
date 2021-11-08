@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div > p {
+    color: #FF375F;
+    margin-bottom: 0.5em;
+}
+
+footer > div > a {
+    color: #e8e8e8;
+    text-decoration: none;
+    margin: 0.1em 0;
+    font-weight: 300;
+    display: flex;
+    transition: 0.4s ease;
+}
+
+footer > div > a:hover {
+    font-weight: bold;
+}
