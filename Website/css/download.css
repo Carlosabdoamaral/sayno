@@ -6,8 +6,21 @@
 }
 
 .download > div {
-    width: 50%;   
+    text-align: center;
+    width: fit-content;   
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.download > div > input {
+    padding: 0.3em;
+    background: #FF375F;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.3em;
+    color: #FFF;
 }
